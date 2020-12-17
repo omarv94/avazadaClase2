@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones Aritmeticas</title>
+    <!-- <script src="js/variables.js"></script> -->
+    <!-- <script src="js/operArit.js"></script> -->
+    <script src="js/eDecision.js"></script>
+</head>
+<body>
+    <!-- <h1>Formulario Operaciones Aritmeticas</h1>
+    <form>
+        <label for="nUno">Numero Uno</label>
+        <input type="text" name="nUno" id="nUno">
+        <br><br>
+        <label for="nDos">Numero Dos</label>
+        <input type="text" name="nDos" id="nDos">
+        <br><br>
+        <button type="button" onclick="sumar()" >Calcular</button>
+        <br><br>
+        <button type="button" onclick="multiplicar()" >Multiplicar</button>
+        <p>Resultado:
+            <textarea id="resulOperacion" cols="5" rows="1"></textarea>
+        </p>
+    </form> -->
+    <h1>Ejemplos estructuras de decision</h1>
+    <section>    
+        <h2>If simple y compuesto</h2>
+        <form>
+            <label for="edad">Edad</label>
+            <input type="text" name="edad" id="edad">
+            <br><br>
+            <button type="button" onclick="mostrarMensaje()">Mostrar</button>
+        </form>
+    </section>
+    <br><hr>
+    <section>    
+        <h2>If anidado</h2>
+        <form>
+            <label for="edadP">Edad</label>
+            <input type="text" name="edadP" id="edadP">
+            <br><br>
+            <label for="estaturaP">Estatura</label>
+            <input type="text" name="estaturaP" id="estaturaP">
+            <br><br>
+            <label for="pesoP">Peso</label>
+            <input type="text" name="pesoP" id="pesoP">
+            <br><br>
+            <button type="button" onclick="mostrarMensajeDos()">Mostrar</button>
+        </form>
+    </section>
+    
+    <br><hr>
+    <section>
+        <h2> do while</h2>
+        <script>
+            let people = () =>{
+                let age=0,paramAge=0;
+                let count=-1;
+                let totalAge =0 , averangeAge=0;
+
+                do {
+                    age = parseInt(prompt('Enter Age'));
+                    if(age<=18){
+                        alert('No puede ingresar eres menor de edad')
+                    }else{
+                        alert('bienvenido')
+                    }
+
+                    totalAge = totalAge+age;
+                    averangeAge = parseInt(totalAge / count)
+                    count ++;
+                } while (age !=paramAge);
+                    console.log(`cant:${count} & total:${totalAge} & prom:${averangeAge}`);
+            }
+            people()
+        </script>
+    </section>
+</body>
+</html>
